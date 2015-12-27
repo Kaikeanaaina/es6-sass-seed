@@ -15,7 +15,7 @@ gulp.task('default',function () {
 
 //sass task
 gulp.task('sass', function () {
-  gulp.src('gstscss/styles.scss')
+  gulp.src('scss/styles.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('public/css'));
 });
@@ -23,7 +23,7 @@ gulp.task('sass', function () {
 
 
 
-//sass
+//es6 task
 
 gulp.task('babel',function () {
   return gulp.src('src/**/*.js')
