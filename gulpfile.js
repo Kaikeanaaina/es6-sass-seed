@@ -25,3 +25,10 @@ gulp.task('sass', function () {
 
 //sass
 
+gulp.task('babel',function () {
+  return gulp.src('src/**/*.js')
+    .pipe(babel({
+      presets: ['es2015']
+    }))
+    .pipe(gulp.dest('dist'));
+});
